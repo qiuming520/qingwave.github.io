@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Mirror the Github organization repos to Gitee.
-      uses: Yikun/hub-mirror-action@v1.0
+      uses: Yikun/hub-mirror-action@master
       with:
         src: github.com/qiuming520
         dst: gitee.com/qiuming520
