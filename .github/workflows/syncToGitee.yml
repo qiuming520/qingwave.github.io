@@ -2,9 +2,11 @@ name: Github repos mirror periodic job
 on:
   push:
     # Runs at every pull requests submitted in master branch 
-    branches: [ master ]
+    branches: master
+  pull_request:
+    branches: master
 jobs:
-  build:
+  run:
     runs-on: ubuntu-latest
     steps:
     - name: Mirror the Github organization repos to Gitee.
@@ -16,4 +18,6 @@ jobs:
         dst_token:  ${{ secrets.GITEE_TOKEN }}
         timeout: 600
         debug: true
-        static_list: "qingwave.github.io"
+        account_type: user
+        force_update: true
+        static_list: 'qingwave.github.io'
