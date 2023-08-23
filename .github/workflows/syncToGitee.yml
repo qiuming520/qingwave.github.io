@@ -12,8 +12,8 @@ jobs:
     - name: Mirror the Github organization repos to Gitee.
       uses: Yikun/hub-mirror-action@master
       with:
-        src: 'github.com/qiuming520'
-        dst: 'gitee.com/qiuming520'
+        src: 'github/qiuming520'
+        dst: 'gitee/qiuming520'
         dst_key: ${{ secrets.GITEE_PRIVATE_KEY }}
         dst_token:  ${{ secrets.GITEE_TOKEN }}
         timeout: 600
