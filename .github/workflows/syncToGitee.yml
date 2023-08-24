@@ -19,7 +19,7 @@ jobs:
         timeout: 600
         debug: true
         account_type: user
-        force_update: true
+        force_update: false
         static_list: 'qingwave.github.io'
 
 # test
