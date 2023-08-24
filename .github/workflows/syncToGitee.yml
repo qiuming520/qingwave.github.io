@@ -21,3 +21,4 @@ jobs:
         account_type: user
         force_update: true
         static_list: 'qingwave.github.io'
+
